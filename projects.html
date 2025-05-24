@@ -1,0 +1,171 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<title>all projects</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-[#111418] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283039] px-10 py-4 sticky top-0 z-50 bg-[#111418]/80 backdrop-blur-sm">
+<div class="flex items-center gap-3 text-white">
+<svg class="size-7 text-[#0c7ff2]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">My Portfolio</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-slate-300 hover:text-white text-base font-medium leading-normal transition-colors" href="index.html">Home</a>
+<a class="text-slate-300 hover:text-white text-base font-medium leading-normal transition-colors" href="about.html">About</a>
+<a class="text-[#0c7ff2] text-base font-semibold leading-normal" href="proj.html">Projects</a>
+<a class="text-slate-300 hover:text-white text-base font-medium leading-normal transition-colors" href="skills.html">Skills</a>
+<a class="text-slate-300 hover:text-white text-base font-medium leading-normal transition-colors" href="contact.html">Contact</a>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("dp.jpeg");'></div>
+</nav>
+</header>
+<main class="px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-10 lg:py-16">
+  <div class="layout-content-container flex flex-col max-w-[1100px] flex-1">
+    <div class="flex flex-col items-center text-center mb-12">
+      <h1 class="text-white tracking-tight text-4xl md:text-5xl font-bold leading-tight">Projects</h1>
+      <p class="text-[#9cabba] text-lg font-normal leading-normal mt-4 max-w-2xl">
+        A collection of academic and personal projects showcasing my skills and interests. Dive into my work and see what I can do.
+      </p>
+    </div>
+
+    <!-- Academic Projects -->
+    <section class="mb-16">
+      <h2 class="text-white text-3xl font-bold leading-tight tracking-tight mb-8 border-l-4 border-[#0c7ff2] pl-4">Academic Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- SAR Target Classification -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12559-018-9563-z/MediaObjects/12559_2018_9563_Fig3_HTML.png");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">SAR Target Classification</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Built a CNN model for synthetic aperture radar target classification achieving 94%+ accuracy, using the MSTAR dataset.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="https://github.com/Deepayanbasu07/SAR-Target-Classification-Using-Deep-Learning">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Band Gap Prediction -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://pubs.acs.org/cms/10.1021/acs.jpcc.9b11768/asset/images/medium/jp9b11768_0007.gif");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">Band Gap Prediction Using DFT + ML</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Created a predictive model for material band gaps using data from the Materials Project API with VASP and Python.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="https://github.com/Deepayanbasu07/ML-for-Band-Gap-Prediction">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Lankford Coefficient Prediction -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://mtex-toolbox.github.io/images/Lankford_03.png");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">Lankford Coefficient Prediction</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Predicted Lankford coefficients (r-values) from ODF images using CNN. Enabled faster estimation of plastic anisotropy in metals.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="https://github.com/Deepayanbasu07/LankfordCoefficientPrediction">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Stress Hotspots in FCC Materials -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://www.researchgate.net/profile/Ankita-Mangal/publication/320796741/figure/fig5/AS:670400983879706@1536847458572/a-Representative-pole-figures-for-six-different-FCC-textures-b-Histograms-of-grain.png");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">Stress Hotspot Prediction</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Used microstructural texture and geometry-derived features to predict stress hotspots in FCC materials via ML models.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="https://github.com/Deepayanbasu07/Predicting-Stress-Hotspots-in-FCC-Materials-Using-Machine-Learning-Models">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Causal ML Project -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*bdUTusit1-AKc0rz");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">Causal ML: App Engagement Analysis</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Used Causal Trees and Random Forests to estimate the treatment effect of rewards on app participation across user demographics.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="#">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Concall Sentiment Analysis -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://www.researchgate.net/publication/351389439/figure/fig1/AS:1112165390004225@1642172300616/Workflow-of-sentiment-analysis-using-AFINN-lexicon.ppm");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">Concall Sentiment Analysis</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">
+              An NLP-based tool for analyzing sentiments in conference call transcripts using VADER and Afinn. Supports PDF/Excel input, tokenizes speech content, and exports normalized sentiment metrics and key word extractions to CSV.
+            </p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="#">Learn More →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Personal Projects -->
+    <section>
+      <h2 class="text-white text-3xl font-bold leading-tight tracking-tight mb-8 border-l-4 border-[#0c7ff2] pl-4">Personal Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Financial Chatbot -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://res.cloudinary.com/dthpnue1d/image/upload/v1716889772/build_an_llm_rag_chatbot_bg_c45f0ee2cb.png");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">LLM-Based Financial Chatbot</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Built an AI assistant to extract, summarize, and search insights from 100+ financial transcripts using LangChain, Ollama, and vector embeddings.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="#">Learn More →</a>
+          </div>
+        </div>
+
+        <!-- Portfolio Website -->
+        <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
+          <div class="relative h-56">
+            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
+              style='background-image: url("https://raw.githubusercontent.com/Deepayanbasu07/Portfolio-Website/main/preview.png");'></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">Portfolio Website</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">Designed and built this modern portfolio using HTML and Tailwind CSS to showcase academic and personal projects.</p>
+            <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="#">Learn More →</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="bg-[#1a1f25] text-center py-6 px-10">
+<p class="text-slate-400 text-sm">© 2024 My Portfolio. All rights reserved.</p>
+</footer>
+</div>
+</div>
+
+</body></html>

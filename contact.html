@@ -1,0 +1,100 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-[#111418]">
+  <header class="bg-[#1a1f26] border-b border-gray-800 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-3">
+          <!-- Profile Image -->
+          <img src="assets/dp.jpeg" alt="Deepayan Basu" class="w-10 h-10 rounded-full object-cover border border-gray-700"/>
+          <span class="text-white font-bold text-xl">Deepayan Basu</span>
+        </div>
+        <nav class="flex space-x-6">
+          <a href="index.html" class="text-gray-300 hover:text-white text-base font-medium transition-colors">Home</a>
+          <a href="about.html" class="text-gray-300 hover:text-white text-base font-medium transition-colors">About</a>
+          <a href="projects.html" class="text-gray-300 hover:text-white text-base font-medium transition-colors">Projects</a>
+          <a href="skills.html" class="text-gray-300 hover:text-white text-base font-medium transition-colors">Skills</a>
+        </nav>
+      </div>
+    </div>
+</header>
+
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-12 md:py-16 lg:py-20">
+<div class="layout-content-container flex flex-col max-w-4xl flex-1">
+<div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+<div class="flex flex-col space-y-8">
+<div>
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight">Resume &amp; Contact</h2>
+<p class="text-gray-400 text-base md:text-lg font-normal leading-relaxed mt-4">
+                    For a detailed overview of my academic and professional journey, please download my resume. If you have any questions or would like to discuss potential
+                    opportunities, feel free to reach out.
+                  </p>
+</div>
+
+<div class="flex flex-col sm:flex-row gap-4">
+  <a href="resumes/Deepayan_Core_Resume.pdf" download class="flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-[#0c7ff2] text-white text-base font-semibold leading-normal tracking-wide hover:bg-blue-600 transition-colors duration-300">
+    <span class="material-icons-outlined">download</span>
+    <span>Core Resume</span>
+  </a>
+  <a href="resumes/Deepayan_NonCore_Resume.pdf" download class="flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-[#283039] text-white text-base font-semibold leading-normal tracking-wide hover:bg-[#3A444E] transition-colors duration-300">
+    <span class="material-icons-outlined">download</span>
+    <span>Non-Core Resume</span>
+  </a>
+</div>
+
+<div class="pt-6 border-t border-gray-700">
+<h3 class="text-white text-xl font-semibold mb-3">Contact Directly</h3>
+<div class="flex items-center gap-3 text-gray-400 hover:text-[#0c7ff2] transition-colors">
+<span class="material-icons-outlined text-xl">email</span>
+<a class="text-base" href="mailto:email@example.com">deepayanbasu5@gmail.com</a>
+</div>
+<div class="flex items-center gap-3 text-gray-400 mt-2 hover:text-[#0c7ff2] transition-colors">
+<span class="material-icons-outlined text-xl">phone</span>
+<a class="text-base" href="tel:+1234567890">(+91) 8100537113</a>
+</div>
+</div>
+</div>
+<div class="bg-[#1a1f26] p-6 md:p-8 rounded-xl shadow-2xl">
+<h3 class="text-white text-2xl font-semibold mb-6">Send a Message</h3>
+<form action="https://formspree.io/f/mbloeelk" method="POST" class="space-y-6">
+  <div>
+    <label class="sr-only" for="name">Your Name</label>
+    <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] border border-gray-700 bg-[#283039] h-12 placeholder:text-gray-500 p-4 text-base font-normal leading-normal" id="name" name="name" placeholder="Your Name" type="text" required />
+  </div>
+  <div>
+    <label class="sr-only" for="email">Your Email</label>
+    <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] border border-gray-700 bg-[#283039] h-12 placeholder:text-gray-500 p-4 text-base font-normal leading-normal" id="email" name="email" placeholder="Your Email" type="email" required />
+  </div>
+  <div>
+    <label class="sr-only" for="subject">Subject</label>
+    <input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] border border-gray-700 bg-[#283039] h-12 placeholder:text-gray-500 p-4 text-base font-normal leading-normal" id="subject" name="subject" placeholder="Subject" type="text" required />
+  </div>
+  <div>
+    <label class="sr-only" for="message">Your Message</label>
+    <textarea class="form-textarea flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#0c7ff2] border border-gray-700 bg-[#283039] min-h-32 placeholder:text-gray-500 p-4 text-base font-normal leading-normal" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+  </div>
+  <div class="flex justify-start">
+    <button class="flex items-center justify-center gap-2 min-w-[84px] cursor-pointer overflow-hidden rounded-lg h-12 px-6 bg-[#0c7ff2] text-white text-base font-semibold leading-normal tracking-wide hover:bg-blue-600 transition-colors duration-300" type="submit">
+      <span class="material-icons-outlined">send</span>
+      <span class="truncate">Send Message</span>
+    </button>
+  </div>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
