@@ -41,17 +41,26 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- SAR Target Classification -->
+        <!-- SAR Target Classification (Updated) -->
         <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
           <div class="relative h-56">
             <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105"
               style='background-image: url("https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12559-018-9563-z/MediaObjects/12559_2018_9563_Fig3_HTML.png");'></div>
           </div>
           <div class="p-6 flex flex-col flex-grow">
-            <h3 class="text-white text-xl font-semibold leading-tight mb-2">SAR Target Classification</h3>
-            <p class="text-[#9cabba] text-sm flex-grow">Built a CNN model for synthetic aperture radar target classification achieving 94%+ accuracy, using the MSTAR dataset.</p>
+            <h3 class="text-white text-xl font-semibold leading-tight mb-2">SAR Target Classification (J-CNN + TDP)</h3>
+            <p class="text-[#9cabba] text-sm flex-grow">
+              Designed a dual-branch CNN for SAR image despeckling and classification. Achieved 94% accuracy on the MSTAR dataset with 17.7% filter pruning via task-driven criteria.
+            </p>
+            <p class="text-xs text-gray-500 mt-2">
+              References:
+              <a class="underline hover:text-blue-400" href="https://www.mdpi.com/1424-8220/25/10/3117">[1]</a>
+              <a class="underline hover:text-blue-400 ml-2" href="https://www.mdpi.com/2072-4292/14/24/6240">[2]</a>
+            </p>
             <a class="mt-4 text-[#0c7ff2] hover:text-[#3b9eff] text-sm font-medium" href="https://github.com/Deepayanbasu07/SAR-Target-Classification-Using-Deep-Learning">Learn More →</a>
           </div>
         </div>
+
 
         <!-- Band Gap Prediction -->
         <div class="bg-[#1a1f25] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group flex flex-col">
