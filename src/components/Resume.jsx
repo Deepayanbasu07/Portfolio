@@ -37,10 +37,26 @@ const experience = [
 ];
 
 const skills = [
-  { name: 'Data Science & Risk Modeling', value: 90 },
-  { name: 'GenAI & LLM Engineering', value: 85 },
-  { name: 'Machine Learning & Deep Learning', value: 85 },
-  { name: 'MLOps & Infrastructure', value: 75 },
+  {
+    name: 'Data Science & Risk Modeling',
+    value: 90,
+    technologies: ['Python', 'SQL', 'Scikit-learn', 'TensorFlow', 'Statsmodels', 'PyCaret', 'PD/LGD/EAD Frameworks']
+  },
+  {
+    name: 'Model Diagnostics',
+    value: 88,
+    technologies: ['KS-statistic', 'PSI', 'CSI', 'UPAI', 'MPAI', 'Gini', 'VIF', 'SHAP Explainability']
+  },
+  {
+    name: 'GenAI & LLM Engineering',
+    value: 85,
+    technologies: ['vLLM', 'LangChain', 'PagedAttention', 'FAISS', 'ChromaDB', 'Neo4j', 'FinBERT', 'Ollama']
+  },
+  {
+    name: 'MLOps & Infrastructure',
+    value: 75,
+    technologies: ['FastAPI', 'Docker', 'Git', 'GitHub Actions', 'MCP Server', 'Streamlit', 'Gradio', 'Power BI', 'Plotly', 'Databricks', 'SAS', 'Advanced Excel']
+  }
 ];
 
 export default function Resume({ isActive }) {
@@ -102,6 +118,16 @@ export default function Resume({ isActive }) {
               <div className="skill-progress-bg">
                 <div className="skill-progress-fill" style={{ width: `${skill.value}%` }} />
               </div>
+
+              {skill.technologies && (
+                <ul className="skill-tags-list">
+                  {skill.technologies.map((tech) => (
+                    <li key={tech} className="skill-tag">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

@@ -2311,3 +2311,31 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: block;
   }
 }
+
+.skill-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.skill-tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-glass);
+  color: var(--light-gray-70);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: var(--fs-7);
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-400);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--orange-yellow-crayola);
+  border-color: var(--orange-yellow-crayola);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(252, 186, 3, 0.15);
+}
